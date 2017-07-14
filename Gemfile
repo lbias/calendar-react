@@ -33,8 +33,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'react-rails'
+# gem 'react-rails'
 gem 'haml'
+gem 'webpacker'
 
 group :development, :test do
   gem 'sqlite3'
