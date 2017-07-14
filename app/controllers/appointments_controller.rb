@@ -6,11 +6,11 @@ class AppointmentsController < ApplicationController
 
   def create
     @appointment = Appointment.create(appointment_params)
-    redirect_to :root
+    @appointments = Appointment.order('appt_time ASC')
   end
 
   private
   def appointment_params
     params.require(:appointment).permit(:title, :appt_time)
-  end  
+  end
 end
